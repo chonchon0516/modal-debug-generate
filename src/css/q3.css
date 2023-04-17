@@ -33,5 +33,5 @@
 }
 
 .closeModalButton {
-  display: none;
+  display: flex;
 }
