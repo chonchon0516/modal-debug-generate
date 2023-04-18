@@ -1,5 +1,5 @@
 const modal = document.querySelector('.modal');
-
+console.log(modal);
 /*
  * modalの表示非表示処理
  */
@@ -23,8 +23,8 @@ closeModalButton.addEventListener('click', (event) => {
 /*
  * modal以外をクリックしたときの示非表示処理
  */
-modal.addEventListener('click', (evemt) => {
-  if(event.target.closest('.closeModalButton') === null) {
+modal.addEventListener('click', (event) => {
+  if(event.target.closest('.modal__container') === null) {
     modal.classList.remove('show');
     modal.classList.add('hide');
     // alert('外側をクリックされました。') ← こちらもやってみるとおもろいです！！
