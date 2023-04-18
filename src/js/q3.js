@@ -19,11 +19,10 @@ closeModalButton.addEventListener('click', (event) => {
   modal.classList.remove('show');
   modal.classList.add('hide');
 });
-
 /*
  * modal以外をクリックしたときの示非表示処理
  */
-modal.addEventListener('click', (evemt) => {
+modal.addEventListener('click', (event) => {
   if(event.target.closest('.modal__container') === null) {
     modal.classList.remove('show');
     modal.classList.add('hide');
