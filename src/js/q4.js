@@ -1,5 +1,4 @@
 const modal = document.querySelector('.modal');
-console.log(modal);
 /*
  * modalの表示非表示処理
  */
